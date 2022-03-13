@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>UTBK Countdown</h1>
+    <h2 id="demo"></h2>
+    <script>
+        var countDownDate = new Date("may 17, 2022 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم";
+            }
+        }, 1000);
+    </script>
+    <a href="https://www.instagram.com/m_zaki_w/">CC</a>
+</body>
+</html>
+<!--cc nya jangan di usik ya,,, hehehe-->

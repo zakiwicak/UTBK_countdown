@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(131, 213, 228);
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 66, 66);
+    font-size: 300%;
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: center;
+}
+h2 {
+    text-shadow: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 500%;
+    font-family: Arial;
+}
+a {
+    text-decoration: none;
+    font-family: Arial;
+    font-style: italic;
+    position: fixed;     
+    text-align: right;    
+    bottom: 2%; 
+    width: 98%;
+}
+/* cc nya jangan di usik ya,,, hehehe*/
